@@ -16,6 +16,6 @@ body{
     font-family: 'Ubuntu', sans-serif;
     max-width:1440px;
     margin: 0 auto;
-    font-size:
+    overflowX: hidden;
 }
 `;

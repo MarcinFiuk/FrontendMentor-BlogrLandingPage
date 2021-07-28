@@ -1,3 +1,4 @@
+import Section3 from './components/Sections/Section3';
 import Footer from './components/Footer/Footer';
 import Attribution from './components/Attribution/Attribution';
 
@@ -7,6 +8,7 @@ function App() {
     return (
         <div>
             <GlobalStyle />
+            <Section3 />
             <Footer />
             <Attribution />
         </div>
