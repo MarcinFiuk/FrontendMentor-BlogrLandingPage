@@ -17,5 +17,6 @@ body{
     max-width:1440px;
     margin: 0 auto;
     overflowX: hidden;
+    border: 1px solid black;
 }
 `;
