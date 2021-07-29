@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-import photoMobile from './../../assets/illustration-laptop-mobile.svg';
-import photoDesktop from './../../assets/illustration-laptop-desktop.svg';
-
 export const Section = styled.section`
     display: flex;
     flex-direction: column;
@@ -23,18 +20,21 @@ export const ImageElement = styled.div`
     width: 326px;
     height: 326px;
     overflow: hidden;
-    background: url(${photoMobile}) no-repeat;
-    background-size: 150% 109%;
+    padding-bottom: 6px;
+
+    background: url(${(props) => props.bgcMobile || 'black'}) no-repeat;
+    background-size: 150% 100%;
     background-position: center;
 
     @media (min-width: 1024px) {
         height: 784px;
         width: 786px;
-        background: url(${photoDesktop}) no-repeat;
-        background-position: -280px;
+        background: url(${(props) => props.bgcDesktop || 'black'}) no-repeat;
+        background-position: -320px;
         background-size: 150% 99%;
     }
 `;
+// background: url(${photoMobile}) no-repeat;
 
 export const TextWrapper = styled.div`
     padding: 0 2px 0 6px;
@@ -51,7 +51,16 @@ export const TextWrapper = styled.div`
     }
 `;
 
-export const ParagraphHeading = styled.h2`
+export const SectionHeading = styled.h2`
+    margin-bottom: 38px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.8rem;
+    letter-spacing: -0.84px;
+    color: hsl(208, 49%, 24%);
+`;
+
+export const ParagraphHeading = styled.h3`
     font-weight: 600;
     font-size: 2.8rem;
     line-height: 32px;

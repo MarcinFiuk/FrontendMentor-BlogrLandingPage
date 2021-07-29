@@ -8,6 +8,9 @@ import {
     ParagraphHeading,
 } from './sectionStyles';
 
+import photoMobile from './../../assets/illustration-laptop-mobile.svg';
+import photoDesktop from './../../assets/illustration-laptop-desktop.svg';
+
 const Section3 = () => {
     useEffect(() => {
         //windows.matchMedia -https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Testing_media_queries#receiving_query_notifications
@@ -17,8 +20,7 @@ const Section3 = () => {
 
     return (
         <Section>
-            <ImageElement />
-
+            <ImageElement bgcMobile={photoMobile} bgcDesktop={photoDesktop} />
             <TextWrapper>
                 <ParagraphHeading>Free, open, simple</ParagraphHeading>
                 <IndividualParagraph>
