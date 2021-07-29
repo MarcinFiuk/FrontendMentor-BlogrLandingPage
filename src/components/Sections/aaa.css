@@ -1,0 +1,11 @@
+.a {
+    border-top-right-radius: 1px;
+    text-transform: capitalize;
+    color: inherit;
+    background-image: url('./../../assets/illustration-laptop-mobile.svg');
+}
+.test {
+    width: 100px;
+    height: 100px;
+    background-image: url('./../../assets/illustration-laptop-mobile.svg');
+}

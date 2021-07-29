@@ -1,12 +1,8 @@
 import React, { useEffect } from 'react';
 
-import photoMobile from './../../assets/illustration-laptop-mobile.svg';
-import photoDesktop from './../../assets/illustration-laptop-desktop.svg';
-
 import {
     Section,
-    ImageWrapper,
-    Image,
+    ImageElement,
     TextWrapper,
     IndividualParagraph,
     ParagraphHeading,
@@ -21,10 +17,8 @@ const Section3 = () => {
 
     return (
         <Section>
-            <ImageWrapper>
-                {/* <Image src={photoMobile} alt='laptop' /> */}
-                <Image src={photoDesktop} alt='laptop' />
-            </ImageWrapper>
+            <ImageElement />
+
             <TextWrapper>
                 <ParagraphHeading>Free, open, simple</ParagraphHeading>
                 <IndividualParagraph>

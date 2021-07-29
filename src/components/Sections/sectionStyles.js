@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+import photoMobile from './../../assets/illustration-laptop-mobile.svg';
+import photoDesktop from './../../assets/illustration-laptop-desktop.svg';
+
 export const Section = styled.section`
     display: flex;
     flex-direction: column;
@@ -9,36 +12,27 @@ export const Section = styled.section`
 
     @media (min-width: 768px) {
         flex-direction: row;
-        // justify-content: space-evenly;
-    }
-
-    @media (min-width: 1024px) {
         justify-content: space-between;
         align-items: center;
-    } ;
+        margin-left: 0;
+    }
 `;
 
-export const ImageWrapper = styled.div`
+export const ImageElement = styled.div`
     align-self: center;
     width: 326px;
     height: 326px;
     overflow: hidden;
+    background: url(${photoMobile}) no-repeat;
+    background-size: 150% 109%;
+    background-position: center;
 
     @media (min-width: 1024px) {
         height: 784px;
         width: 786px;
-    }
-`;
-
-export const Image = styled.img`
-    height: 326px;
-    width: 326px;
-    transform: scaleX(1.5) scaleY(1.1);
-
-    @media (min-width: 1024px) {
-        height: 784px;
-        width: 860px;
-        transform: translateX(-245px);
+        background: url(${photoDesktop}) no-repeat;
+        background-position: -280px;
+        background-size: 150% 99%;
     }
 `;
 
@@ -47,7 +41,8 @@ export const TextWrapper = styled.div`
     text-align: center;
 
     @media (min-width: 768px) {
-        width: 50%;
+        justify-content: space-evenly;
+        width: 450px;
         text-align: left;
     }
     @media (min-width: 1024px) {
@@ -62,10 +57,6 @@ export const ParagraphHeading = styled.h2`
     line-height: 32px;
     color: hsl(208, 49%, 24%);
     margin: 40px 0 16px;
-
-    @media (min-width: 1024px) {
-        // margin-top: 0;
-    }
 `;
 
 export const IndividualParagraph = styled.p`
@@ -76,6 +67,6 @@ export const IndividualParagraph = styled.p`
     color: hsl(207, 13%, 34%);
 
     @media (min-width: 1024px) {
-        margin-bottom: 24px;
+        padding-bottom: 24px;
     }
 `;
