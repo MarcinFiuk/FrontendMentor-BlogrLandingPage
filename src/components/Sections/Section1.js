@@ -8,7 +8,7 @@ import {
     TextWrapper,
     ParagraphHeading,
     IndividualParagraph,
-} from './sectionStyles';
+} from './oddSectionsStyles';
 import photoMobile from './../../assets/illustration-editor-mobile.svg';
 import photoDesktop from './../../assets/illustration-editor-desktop.svg';
 

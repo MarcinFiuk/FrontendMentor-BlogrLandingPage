@@ -7,7 +7,7 @@ import {
     TextWrapper,
     IndividualParagraph,
     ParagraphHeading,
-} from './sectionStyles';
+} from './oddSectionsStyles';
 
 import photoMobile from './../../assets/illustration-laptop-mobile.svg';
 import photoDesktop from './../../assets/illustration-laptop-desktop.svg';

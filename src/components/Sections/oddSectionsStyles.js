@@ -39,13 +39,16 @@ export const ImageElement = styled.div`
     background-size: ${(props) => props.bgSizeM || '0px'};
     background-position: center;
 
+    @media (min-width: 768px) {
+        order: ${(props) => props.order};
+    }
+
     @media (min-width: 1024px) {
         height: ${(props) => props.heightD || 'auto'};
         width: ${(props) => props.widthD || 'auto'};
         background: url(${(props) => props.bgcDesktop || 'black'}) no-repeat;
         background-position: ${(props) => props.bgPosition || 'auto'};
         background-size: 150% 99%;
-        order: ${(props) => props.order};
     }
 `;
 
