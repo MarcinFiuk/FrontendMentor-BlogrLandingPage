@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LogoImage from '../UI/Logo';
+import Logo from '../UI/Logo';
 import FooterList from './FooterList';
 
 import { FooterContainer } from './footerStyles';
@@ -9,11 +9,8 @@ import { FooterContainer } from './footerStyles';
 const Footer = () => {
     return (
         <FooterContainer>
-            <LogoImage />
+            <Logo marBottom='32px' w='101px' h='40px' />
             <FooterList />
-            {/* {productList}
-            {companyList}
-            {connectList} */}
         </FooterContainer>
     );
 };
